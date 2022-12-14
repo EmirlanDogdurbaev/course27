@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<div style="background-color:#175475 ; padding: 200px;">
+    <center>
+        <h1>{{book.name_of_book}}</h1>
+        <p>{{book.description_of_book}}</p>
+        <img src="{{book.image_of_book.url}}" alt="picture">
+        <p>{{book.author_of_book}}</p>
+        <p>{{book.course_of_book}}</p>
+    </center>
+</div>
+{% endblock %}

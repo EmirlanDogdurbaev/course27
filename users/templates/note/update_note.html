@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="up_wrap">
+    <form action="" method="post" enctype="multipart/form-data">
+        <h1>Изменение фильма</h1>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="update" />
+    </form>
+</div>
+<style>
+    .up_wrap {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+    }
+</style>
+{% endblock %}
